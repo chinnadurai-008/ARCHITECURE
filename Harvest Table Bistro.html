@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/restaurant-portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest Table Bistro</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f4ef;
+            color: #2f2f2f;
+        }
+        .page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        header {
+            padding: 32px 0;
+            text-align: center;
+        }
+        .brand {
+            font-size: 2.8rem;
+            margin: 0;
+            color: #8a4b23;
+            letter-spacing: 0.06em;
+        }
+        .subtitle {
+            margin: 10px 0 0;
+            color: #6b5c51;
+            font-size: 1rem;
+        }
+        .hero {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 18px 35px rgba(66, 59, 54, 0.08);
+            overflow: hidden;
+            margin-top: 24px;
+        }
+        .hero-image {
+            width: 100%;
+            display: block;
+            max-height: 360px;
+            object-fit: cover;
+        }
+        .hero-content {
+            padding: 32px;
+        }
+        .hero-content h2 {
+            margin: 0 0 16px;
+            font-size: 1.9rem;
+            color: #3f3024;
+        }
+        .hero-content p {
+            margin: 0 0 20px;
+            color: #5e4f45;
+            line-height: 1.75;
+        }
+        .details {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            margin-top: 24px;
+        }
+        .card {
+            background: #fff8f0;
+            border-radius: 18px;
+            padding: 22px;
+            border: 1px solid #f0e4d9;
+        }
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            color: #8a4b23;
+        }
+        .card p {
+            margin: 0;
+            color: #5d4e43;
+            line-height: 1.65;
+        }
+        .address {
+            margin: 0;
+            line-height: 1.7;
+        }
+        footer {
+            text-align: center;
+            padding: 28px 0 10px;
+            color: #7a6e66;
+        }
+        @media (max-width: 640px) {
+            .hero-content {
+                padding: 24px;
+            }
+            .brand {
+                font-size: 2.2rem;
+            }
+            .hero-content h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1 class="brand">Harvest Table Bistro</h1>
+            <p class="subtitle">A cozy restaurant crafting seasonal plates with fresh ingredients and warm hospitality.</p>
+        </header>
+
+        <section class="hero">
+            <img class="hero-image" src="./Harvest Table Bistro_files/photo-1517248135467-4c7edcad34c4" alt="Restaurant interior and dishes">
+            <div class="hero-content">
+                <h2>Restaurant Portfolio</h2>
+                <p>Harvest Table Bistro is a neighborhood restaurant offering a menu of artisan salads, wood-fired dishes, and locally sourced desserts. Our dining room is designed for relaxed meals, special occasions, and unforgettable flavors.</p>
+                <div class="details">
+                    <div class="card">
+                        <h3>Location</h3>
+                        <p class="address">
+                            Harvest Table Bistro<br>
+                            142 Market Street<br>
+                            Greenfield District<br>
+                            Riverside City, CA 90210
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Contact</h3>
+                        <p>
+                            Phone: +1 (555) 234-7890<br>
+                            Email: reservations@harvesttablebistro.com
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Featured Offerings</h3>
+                        <p>Seasonal tasting menus, private dining, brunch weekends, and chef’s specials crafted from local produce.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Harvest Table Bistro | Fresh tastes, friendly service, memorable moments.</p>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

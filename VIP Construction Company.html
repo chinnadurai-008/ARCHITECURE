@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/vip-construction.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Construction Company</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f3f4f6;
+            color: #1f2937;
+        }
+        .wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 28px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 32px 0 24px;
+        }
+        .company-name {
+            margin: 0;
+            font-size: 2.8rem;
+            color: #0f172a;
+            letter-spacing: 0.08em;
+        }
+        .tagline {
+            margin: 12px 0 0;
+            font-size: 1.05rem;
+            color: #475569;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+            padding: 28px;
+            margin-top: 24px;
+        }
+        .section-title {
+            margin: 0 0 16px;
+            font-size: 1.55rem;
+            color: #111827;
+        }
+        .text-block {
+            line-height: 1.8;
+            color: #334155;
+        }
+        .info-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            margin-top: 22px;
+        }
+        .info-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            padding: 18px;
+        }
+        .info-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.1rem;
+            color: #0f172a;
+        }
+        .info-card p {
+            margin: 0;
+            color: #475569;
+            line-height: 1.7;
+        }
+        footer {
+            margin-top: 34px;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 640px) {
+            header {
+                padding-top: 24px;
+            }
+            .company-name {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="company-name">VIP Construction Company</h1>
+            <p class="tagline">Building durable, quality projects across Tirunelveli district, Tamil Nadu.</p>
+        </header>
+
+        <section class="card">
+            <h2 class="section-title">Company Profile</h2>
+            <p class="text-block">VIP Construction Company is a trusted local contractor based in Tirunelveli, Tamil Nadu. We specialize in residential and commercial construction, renovation, and civil works with a strong focus on quality materials, skilled workmanship, and timely delivery. Our team delivers cost-effective solutions while maintaining clear communication with clients throughout every stage of the project.</p>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Our Services</h3>
+                    <p>Residential buildings, commercial fit-outs, structural repairs, interior finishing, and project management tailored to local needs.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Our Values</h3>
+                    <p>Safety, transparency, quality control, and strong local partnerships define every project we complete.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Service Area</h3>
+                    <p>Tirunelveli district and nearby towns in southern Tamil Nadu, delivering reliable construction services and technical support.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Company Address</h2>
+            <p class="text-block">VIP Construction Company<br>Door No. 12/34, Vannarapettai Street<br>Palayamkottai, Tirunelveli District<br>Tamil Nadu - 627002</p>
+            <p class="text-block"><strong>Phone:</strong> +91 98765 43210<br><strong>Email:</strong> info@vipconstructiontn.com</p>
+        </section>
+
+        <footer>
+            <p>VIP Construction Company | Trusted construction partner in Tirunelveli, Tamil Nadu.</p>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
